@@ -7,10 +7,8 @@ let ticket = km * rate;
 if(eta < 18){
     ticket -= ticket * 0.20;
 }else if(eta > 65){
-    ticket -= ticket *0.40
+    ticket -= ticket * 0.40;
 }
 ticket = ticket.toFixed(2);
 
 document.getElementById('output').innerHTML += ticket;
-
-console.log(km, eta, ticket);
